@@ -1,0 +1,16 @@
+# Step 1: Initialize local repository
+git init
+
+# Step 2: Link to GitHub repository
+git remote add origin https://github.com/OliverFeronel090597/Index-Test-Time-Tool.git
+
+#if error try 
+git pull origin main --allow-unrelated-histories
+
+
+# Step 3: Add files and commit
+git add .
+git commit -m "Initial commit"
+
+# Step 4: Push to GitHub
+git push -u origin master
