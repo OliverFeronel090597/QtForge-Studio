@@ -1,16 +1,43 @@
-# Step 1: Initialize local repository
+# Step 1: Initialize repo
 git init
 
-# Step 2: Link to GitHub repository
+# Step 2: Create and switch to main branch
+git branch -M main
+
+# Step 3: Add remote
 git remote add origin https://github.com/OliverFeronel090597/Index-Test-Time-Tool.git
 
-#if error try 
-git pull origin main --allow-unrelated-histories
-
-
-# Step 3: Add files and commit
+# Step 4: Add & commit
 git add .
 git commit -m "Initial commit"
 
-# Step 4: Push to GitHub
-git push -u origin master
+# Step 5: Push main branch
+git push -u origin main
+
+
+if error
+
+git init
+git branch -M main
+git remote add origin https://github.com/OliverFeronel090597/Index-Test-Time-Tool.git
+
+git pull origin main --allow-unrelated-histories
+
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+
+
+quick check
+
+git branch
+git remote -v
+git status
+
+
+Senior dev tip
+
+Lock this in early:
+
+git config --global init.defaultBranch main
